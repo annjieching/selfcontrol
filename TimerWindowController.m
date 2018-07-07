@@ -244,7 +244,7 @@
     [NSApp endSheet: extendBlockTimeSheet_];
 }
 
-- (void) blockDurationUpdated {
+- (void) blockEndDateUpdated {
     // Try reading the block parameters from the lockfile first
     NSDictionary* blockDict = [NSDictionary dictionaryWithContentsOfFile: SelfControlLockFilePath];
     // if we can't find a block in the lockfile, fall back to defaults
